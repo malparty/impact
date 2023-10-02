@@ -1,0 +1,15 @@
+{
+"env": {
+  "jest": true
+},
+
+  "extends": [
+      "@nimblehq/eslint-config-nimble"
+  ],
+  "globals": {
+    "I18n": true
+  },
+  "parserOptions":{
+    "ecmaVersion": "latest"
+  }
+}
