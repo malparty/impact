@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    actions:
+      create: created
+      destroy: destroyed
+      update: updated
+    action_messages:
+      success: The %{resource} has been successfully %{action}.
