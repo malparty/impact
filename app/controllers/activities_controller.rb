@@ -9,7 +9,9 @@ class ActivitiesController < ApplicationController
   end
 
   # GET /activities/1
-  def show; end
+  def show
+    render Activities::Show.new(activity: @activity)
+  end
 
   # GET /activities/new
   def new

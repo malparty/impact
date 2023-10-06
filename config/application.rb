@@ -8,6 +8,11 @@ Bundler.require(*Rails.groups)
 
 module Impact
   class Application < Rails::Application
+    # Phlex views
+    config.autoload_paths << "#{root}/app/views"
+    config.autoload_paths << "#{root}/app/views/layouts"
+    config.autoload_paths << "#{root}/app/views/components"
+
     # eg: AVAILABLE_LOCALES = 'en,th'
     config.i18n.available_locales = ENV.fetch('AVAILABLE_LOCALES').split(',')
 

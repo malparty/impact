@@ -25,17 +25,27 @@ Layout/LineLength:
   Max: 130
   Exclude:
     - 'spec/**/*'
+    - 'app/views/**/*'
     - 'config/**/*'
 
 Metrics/BlockLength:
   Exclude:
+    - 'app/views/**/*'
     - 'spec/**/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'app/views/**/*'
 
 Style/FormatStringToken:
   EnforcedStyle: template
 
 Rails/FilePath:
   EnforcedStyle: arguments
+
+Rails/Output:
+  Exclude:
+    - 'app/views/**/*'
 
 RSpec/HookArgument:
   EnforcedStyle: each

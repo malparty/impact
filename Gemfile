@@ -20,6 +20,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby] # Windows doe
 gem 'turbo-rails' # Hotwire's SPA-like page accelerator
 gem 'stimulus-rails' # Hotwire's modest JavaScript framework
 
+# View rendering
+gem "phlex-rails" # Building fast, reusable, testable views in pure Ruby
+
 # Authentications & Authorizations
 gem 'devise' # Authentication solution for Rails with Warden
 gem 'pundit' # Minimal authorization through OO design and pure Ruby classes
