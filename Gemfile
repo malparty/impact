@@ -22,6 +22,7 @@ gem 'stimulus-rails' # Hotwire's modest JavaScript framework
 
 # View rendering
 gem "phlex-rails" # Building fast, reusable, testable views in pure Ruby
+gem "phlex-testing-capybara" # A test helper that lets you use Capybara matchers with Phlex tests
 
 # Authentications & Authorizations
 gem 'devise' # Authentication solution for Rails with Warden

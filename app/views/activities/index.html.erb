@@ -2,9 +2,11 @@
 
 <h1>Activities</h1>
 
+<%= render VisibilityComponent.new %>
+
 <div id="activities">
   <% @activities.each do |activity| %>
-    <%= render activity %>
+    <%= render Activities::Activity.new(activity: activity) %>
     <p>
       <%= link_to "Show this activity", activity %>
     </p>
