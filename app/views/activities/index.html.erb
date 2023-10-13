@@ -4,10 +4,12 @@
 
 <div id="activities">
   <% @activities.each do |activity| %>
-    <%= render activity %>
-    <p>
-      <%= link_to "Show this activity", activity %>
-    </p>
+    <div class="mb-4">
+      <%= render(CardComponent.new(title: 'Activity', sub_title: activity.name)) do %>
+        <p>Hello, World!</p>
+        <%= link_to 'Show this activity', activity, class: 'btn btn-outline-primary' %>
+      <% end %>
+    </div>
   <% end %>
 </div>
 

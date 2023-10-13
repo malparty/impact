@@ -36,6 +36,9 @@ gem 'jsbundling-rails' # Bundle and transpile JavaScript
 gem 'i18n-js', '3.9.0' # A library to provide the I18n translations on the Javascript
 # gem 'devise-i18n' # Translations for Devise
 
+# View engines
+gem 'view_component' # Reusable, testable & encapsulated view components
+
 group :development do
   gem 'foreman' # Manage Procfile-based applications
   gem 'better_errors' # Better error page for Rails and other Rack apps
